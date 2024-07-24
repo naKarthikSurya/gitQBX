@@ -1,3 +1,4 @@
-.env
 
-address.txt
+/dockerdemo/.env
+/dockerdemo/__pycache__
+/dockerdemo/.dockerignore
