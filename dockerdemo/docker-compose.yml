@@ -6,5 +6,11 @@ services:
     build: .
     ports:
       - "8000:82"
-    env_file:
-      - .env
+    env_file: .env
+    develop:
+      watch:
+        - action: sync
+          path: ./app
+          target: /src/app
+        - action: rebuild
+          path: main.py
