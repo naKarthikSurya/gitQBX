@@ -9,7 +9,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return "Hello World"
+    return "Welcome, This is Surya"
 
 @app.get("/value/{variable}")
 def read_variable(variable: str):
