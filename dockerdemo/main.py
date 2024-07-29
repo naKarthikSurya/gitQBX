@@ -10,10 +10,11 @@ app = FastAPI()
 @app.get("/")
 def read_root():
     return "Hello Everyone, This is Surya"
+
 @app.get("/value/{variable}")
 def read_variable(variable: str):
     value = get_attribute(variable)
     return {variable: value}
 
-# if __name__ == "__main__":
-#     uvicorn.run(app, host="localhost", port=8000)
+#if __name__ == "__main__":
+#    uvicorn.run(app, host="localhost", port=8000, reload=True)
